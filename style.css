@@ -1,0 +1,53 @@
+@import url(//db.onlinewebfonts.com/c/62fa13c8d6a7597eef48bdd7e57de4a3?family=Heart+Breaking+Bad);
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg.jpg);
+    font-family:'Heart Breaking Bad' ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin: 10px;
+}
+input {
+    width: 70%;
+    height: 30px;
+    outline: 0em;
+    margin-bottom: 20px;
+}
+input:focus{
+    border-color:skyblue;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.6);
+}
+
+.output{
+    display: grid;
+}
+ul{
+    list-style-type: none;
+}
+#personimg{
+    width: 200px;  
+    border-radius: 50%;  
+}
+.name{
+    margin: 4px;
+    font-size: 40px;
+    color: white;
+}
+.nickname{
+    color: white;
+    font-size:20px;
+    font-family: cursive;
+    margin: 4px;
+}
+.portrayed{
+    color: red;
+    margin-bottom: 20px;
+}
