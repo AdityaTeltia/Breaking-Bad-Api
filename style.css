@@ -29,7 +29,7 @@ input:focus{
 .output{
     display: grid;
 }
-ul{
+.list-group{
     list-style-type: none;
 }
 #personimg{
@@ -50,4 +50,66 @@ ul{
 .portrayed{
     color: red;
     margin-bottom: 20px;
+}
+
+/* CSS of Links  Below*/
+#ul {
+    display: flex;
+    margin-bottom: 10px;
+}
+#ul #li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer; 
+}
+
+#ul #li a {
+    text-decoration: none;
+    /* pointer-events: none; */
+}
+
+#ul #li a .fa {
+    font-size: 3em;
+    color: #222;
+}
+
+#ul #li::before{
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    height: 0;
+    overflow: hidden;
+    transition: height 1.5s ease-in-out;
+    pointer-events: all;
+}
+
+#ul #li:nth-child(1)::before{
+    content: '\f099';
+    color: #1da1f2;
+    border-bottom: 4px solid #1da1f2;
+    pointer-events: all;
+}
+#ul #li:hover::before{
+    height: 100%;
+}
+#ul #li:nth-child(2)::before{
+    content: '\f16d';
+    color:  #405DE6;
+    border-bottom: 4px solid #405DE6;
+    pointer-events: all;
+}
+#ul #li:hover::before{
+    height: 100%;
+}
+#ul #li:nth-child(3)::before{
+    content: '\f09b';
+    color: #000000;
+    border-bottom: 4px solid #000000;
+    pointer-events: all;
+}
+#ul #li:hover::before{
+    height: 100%;
 }
